@@ -8,7 +8,7 @@ from langchain.vectorstores import FAISS
 
 # Load API key
 load_dotenv()
-genai.configure(api_key="AIzaSyBOf5-JO7JJaOE8obRbTXA5b7H2scQI-Zo")
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
 # PDF text extractor
 def extract_text_from_pdf(file):
